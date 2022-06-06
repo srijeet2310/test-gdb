@@ -31,8 +31,15 @@ void sort(item *a, int n)
 	}
 }
 
+void printArray(item *a, int n)
+{
+    for(int i = 0; i < n; i++)
+        printf("%s \t %d \n", a[i].data, a[i].key);
+}
+
 int main()
 {
 	sort(array,5); 
+	printArray(array, 5);
 	return(0);
 }
